@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бар</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><span class="material-symbols-sharp">
+            local_bar
+          </span>
+        </li>
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="#" class="active">Склад</a></li>
+        <li><a href="add.html">Создать</a></li>
+        <li><a href="admin.html">Администрирование</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><button type="submit"><span class="material-symbols-sharp">
+            logout
+          </span></button></li>
+      </ul>
+      <div class="username">
+        klimov22@mail.ru
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="products__warehouse">
+      <h1>Добавление продукции</h1>
+      <div class="products__warehouse-input-name">
+        <h2>Название</h2>
+        <input type="text" class="input-td-wide">
+        
+        <button class="add-btn-warehouse"><h3>Добавить</h3></button>
+      </div>
+      <br>
+      <br>
+      <h1>Склад</h1>
+      <table>
+        <thead>
+          <th>Название</th>
+          <th>Количество</th>
+          <th>Цена / шт.</th>
+
+          <th>Удаление</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Кола</td>
+            <td>50</td>
+            <td><button>Забанить</button></td>
+
+            <td><button>Удалить товар</button></td>
+          </tr>
+          <tr>
+            <td>Кола</td>
+            <td>50</td>
+            <td><button>Забанить</button></td>
+
+            <td><button>Удалить товар</button></td>
+
+          </tr>
+          <tr>
+            <td>Кола</td>
+            <td>50</td>
+            <td><button>Забанить</button></td>
+
+            <td><button>Удалить товар</button></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 Бар</p>
+  </footer>
+</body>
+
+</html>

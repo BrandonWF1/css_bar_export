@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бар</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><span class="material-symbols-sharp">
+            local_bar
+          </span>
+        </li>
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="warehouse.html" class="active">Склад</a></li>
+        <li><a href="#">Создать</a></li>
+        <li><a href="admin.html">Администрирование</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><button type="submit"><span class="material-symbols-sharp">
+          logout
+        </span></button></li>
+      </ul>
+      <div class="username">
+        klimov22@mail.ru
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="products__warehouse">
+      <h1>Создать напиток</h1>
+      <table>
+        <thead>
+          <!-- <th>№</th> -->
+          <th>Название</th>
+          <th>Цена</th>
+          <th>Описание</th>
+          <th>Фото</th>
+          <!-- <th>Статус</th> -->
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <!-- <td>#</td> -->
+            <td><input type="text" class="input-td-wide"> </td>
+            <td><input type="text" class="input-td"></td>
+            <td><textarea type="text" class="input-td-creation"></textarea> </td>
+            <td><input type="file" сlass="input-td-wide"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br><br>
+      <table>
+        <thead>
+          <!-- <th>№</th> -->
+          <th>Ингредиент</th>
+          <th>Кол-во</th>
+
+          <!-- <th>Статус</th> -->
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <td>#</td> -->
+            <td>Водка</td>
+            <td><input type="text" class="input-td-wide"></td>
+          </tr>
+          <tr>
+            <!-- <td>#</td> -->
+            <td>Сок</td>
+            <td><input type="text" class="input-td-wide"></td>
+          </tr>
+          <tr>
+            <!-- <td>#</td> -->
+            <td>Спрайт</td>
+            <td><input type="text" class="input-td-wide"></td>
+          </tr>
+        </tbody>
+        <!-- <tfoot>
+          <tr>
+            <td id="plus-btn-td" colspan="3">
+              <button class="plus-btn" onclick="addRow()">
+                <span class="material-symbols-sharp">
+                  add
+                </span>
+              </button>
+            </td>
+          </tr>
+        </tfoot> -->
+      </table>
+
+      <div class="add-btn-style">
+        <button class="add-btn">
+          <h2>Создать</h2></button>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 Бар</p>
+  </footer>
+</body>
+
+</html>
